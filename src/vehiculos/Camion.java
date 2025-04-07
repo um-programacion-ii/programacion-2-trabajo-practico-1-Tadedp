@@ -20,4 +20,15 @@ public class Camion extends Vehiculo{
     public void setTieneAcoplado(boolean tieneAcoplado) {
         this.tieneAcoplado = tieneAcoplado;
     }
+
+    @Override
+    public String getInformacion() {
+        String informacionAcoplado;
+        if (this.tieneAcoplado) {
+            informacionAcoplado = "\n- Tiene acoplado";
+        } else {
+            informacionAcoplado = "\n- No tiene acoplado";
+        }
+        return super.getInformacion() + informacionAcoplado;
+    }
 }

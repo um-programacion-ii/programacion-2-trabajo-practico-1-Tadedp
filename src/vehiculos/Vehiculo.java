@@ -77,4 +77,11 @@ public class Vehiculo {
         }
         this.capacidadCargaKg = capacidadCargaKg;
     }
+
+    public String getInformacion() {
+        return "- Patente: " + this.getPatente() + "\n" +
+                "- Marca: " + this.getMarca() + "\n" +
+                "- Año: " + this.getAnio() + "\n" +
+                "- Capacidad de carga: " + this.getCapacidadCargaKg() + " kg.";
+    }
 }
