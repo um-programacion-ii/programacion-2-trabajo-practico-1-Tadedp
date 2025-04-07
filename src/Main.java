@@ -1,5 +1,6 @@
 package src;
 
+import src.vehiculos.Camion;
 import src.vehiculos.Vehiculo;
 import src.vehiculos.VehiculoPrinter;
 
@@ -18,9 +19,9 @@ public class Main {
             System.out.println("Mostrando información de vehículo2...");
             vehiculoPrinter.mostrarInformacion(vehiculo2);
 
-            Vehiculo vehiculo3 = new Vehiculo("IJ 789 KL","Volkswagen", 2022, 1500);
-            System.out.println("Mostrando información de vehículo3...");
-            vehiculoPrinter.mostrarInformacion(vehiculo3);
+            Vehiculo camion = new Camion("IJ 789 KL","Volkswagen", 2022, 1500, true);
+            System.out.println("Mostrando información de camión...");
+            vehiculoPrinter.mostrarInformacion(camion);
 
         } catch (InvalidAttributeValueException e) {
             System.out.println(e.toString());
