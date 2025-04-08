@@ -1,5 +1,6 @@
 package src;
 
+import src.vehiculos.Auto;
 import src.vehiculos.Camion;
 import src.vehiculos.Vehiculo;
 import src.vehiculos.VehiculoPrinter;
@@ -27,8 +28,16 @@ public class Main {
             System.out.println("Mostrando información de camion2...");
             vehiculoPrinter.mostrarInformacion(camion2);
 
+            Vehiculo auto1 = new Auto("QR 456 ST","Renault", 2012, 500, 2);
+            System.out.println("Mostrando información de auto1...");
+            vehiculoPrinter.mostrarInformacion(auto1);
+
+            Vehiculo auto2 = new Auto("UV 789 WX","Seat", 2020, 800, 4);
+            System.out.println("Mostrando información de auto2...");
+            vehiculoPrinter.mostrarInformacion(auto2);
+
         } catch (InvalidAttributeValueException e) {
             System.out.println(e.toString());
-        }
+        }   
     }
 }
