@@ -163,3 +163,116 @@ Implementar la clase base `Vehiculo` que servirá como punto de partida para la 
 ## 📝 Licencia
 
 Este trabajo es parte del curso de Programación 2 de Ingeniería en Informática. Uso educativo únicamente.
+
+---
+# Sistema de Gestión de Vehículos
+
+Este proyecto es una aplicación en Java para gestionar vehículos, desarrollada aplicando los principios de **Programación Orientada a Objetos** y los **primeros tres principios SOLID**:
+- SRP (Single Responsibility)
+- OCP (Open/Closed)
+- LSP (Liskov Substitution)
+
+## Requisitos Previos
+
+Antes de compilar y ejecutar el proyecto, debes contar con:
+
+- **Java Development Kit** (JDK 21 recomendado)
+
+- **IDE que soporte Java** (IntelliJ IDEA recomendado)
+
+- **Git**
+
+## Instalación y Configuración
+
+1. **Clona el repositorio**
+
+   En la terminal de tu sistema operativo, ingresa el siguiente comando:
+
+    ```bash
+    git clone https://github.com/um-programacion-ii/programacion-2-trabajo-practico-1-Tadedp.git
+2. **Abre el proyecto en tu IDE**
+
+   Abre la carpeta del proyecto clonado, llamada _programacion-2-trabajo-practico-1-Tadedp_, en tu IDE y configura el proyecto para que use el JDK deseado.
+
+## Compilar y Ejecutar
+
+**Desde IDE**
+
+1. **Compilar el proyecto**
+
+   Con el proyecto abierto en el IDE, busca una opción como **Build** o **Build Project**.
+
+2. **Ejecutar**
+
+   Si tu IDE no ejecuta el proyecto automáticamente luego de compilarlo, ubica la clase principal Main y busca una opción como **Run** o **Run 'Main'**.
+
+**Desde la terminal**
+
+Ingresa la siguiente secuencia de comandos:
+
+1. **Navegar a la carpeta del proyecto**
+
+    ```bash
+    cd programacion-2-trabajo-practico-1-Tadedp
+2. **Compilar el proyecto**
+
+    ```bash
+    javac src/*.java
+3. **Ejecutar el proyecto**
+
+    ```bash
+    java src/Main
+## Ejemplo de Ejecución
+
+Salida esperada:
+
+```bash
+Mostrando información de vehiculo...
+- Patente: AB 123 CD
+- Marca: Ford
+- Año: 2020
+- Capacidad de carga: 1000.0 kg.
+Mostrando información de vehiculo...
+- Patente: EF 456 GH
+- Marca: Fiat
+- Año: 2015
+- Capacidad de carga: 500.0 kg.
+Mostrando información de camion...
+- Patente: IJ 789 KL
+- Marca: Volkswagen
+- Año: 2022
+- Capacidad de carga: 3000.0 kg.
+- Tiene acoplado
+Mostrando información de camion...
+- Patente: MN 123 OP
+- Marca: Chevrolet
+- Año: 2019
+- Capacidad de carga: 2500.0 kg.
+- No tiene acoplado
+Mostrando información de auto...
+- Patente: QR 456 ST
+- Marca: Renault
+- Año: 2012
+- Capacidad de carga: 500.0 kg.
+- Cantidad de pasajeros: 2 personas
+Mostrando información de auto...
+- Patente: UV 789 WX
+- Marca: Seat
+- Año: 2020
+- Capacidad de carga: 800.0 kg.
+- Cantidad de pasajeros: 4 personas
+
+Buscando patente 'MN 123 OP'...
+Vehículo encontrado. Mostrando su información...
+- Patente: MN 123 OP
+- Marca: Chevrolet
+- Año: 2019
+- Capacidad de carga: 2500.0 kg.
+- No tiene acoplado
+```
+
+## Autor
+
+- Tadeo Drube Perez - [Tadedp](https://github.com/Tadedp)  
+
+

@@ -34,8 +34,28 @@ public class Main {
                 vehiculoPrinter.mostrarInformacion(vehiculo);
             }
 
+            String patente = "MN 123 OP";
+            System.out.println("\nBuscando patente '" + patente + "'...");
+            Vehiculo resultadoBusqueda = buscarPorPatente(patente, arrayVehiculo);
+
+            if (resultadoBusqueda == null) {
+                System.out.println("Vehículo con patente '" + patente + "' no encontrado.");
+            } else {
+                System.out.println("Vehículo encontrado. Mostrando su información...");
+                vehiculoPrinter.mostrarInformacion(resultadoBusqueda);
+            }
+
         } catch (InvalidAttributeValueException e) {
             System.out.println(e.toString());
         }
+    }
+
+    public static Vehiculo buscarPorPatente(String patente, ArrayList<Vehiculo> arrayVehiculo) {
+        for (Vehiculo vehiculo : arrayVehiculo){
+            if (vehiculo.getPatente().equals(patente)) {
+                return vehiculo;
+            }
+        }
+        return null;
     }
 }
